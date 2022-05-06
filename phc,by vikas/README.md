@@ -1,13 +1,4 @@
-
-how to use this tool
--------------------- 
-Hare is this command 
---------------------
+How to install
+git clone https://github.com/vikas160/cctv-hacking-by-vikas
 cd phc,by vikas
-ls
-bash wishfish.sh
---------------------
-after this chose your port forwarding tool
-like ngrok and ssh 
--------------------------------------------
-and rock yooooooooooooooooooooooooooooooooo
+bash wishphish.sh
